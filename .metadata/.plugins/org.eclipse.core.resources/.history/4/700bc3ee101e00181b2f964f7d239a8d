@@ -1,0 +1,11 @@
+
+public class Ternary_Op {
+	public static void main (java.lang.String []args) {
+		boolean a;
+		boolean b;
+		
+		a = true;
+		
+		System.out.println(a ? "True" : "False");
+	}
+}
