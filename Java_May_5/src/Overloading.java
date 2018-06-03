@@ -1,4 +1,4 @@
-//This is an example of Inheritence 
+//This is an example of Inheritance 
 class parent{
 	public void m1() {
 		System.out.println("Parent");
