@@ -7,9 +7,9 @@ class overload{
 		System.out.println("We are in method with parameters");
 	}
 }
-public class method_overloading {
+public class Overloading_1{
 	
-	public static void main() {
+	public static void main(String args[]) {
 		overload a;
 		a = new overload();
 		
