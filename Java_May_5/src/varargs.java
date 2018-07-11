@@ -1,4 +1,4 @@
-
+//This program shows how we can use varargs method of accepting variable arguments
 public class varargs {
 static int count = 0;
 	static void print1(int ...a) {
