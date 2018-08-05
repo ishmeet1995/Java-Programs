@@ -11,6 +11,6 @@ public class Interface_example_3 implements sharedConstants{
 		System.out.println("Value of NO: " + NO);
 		System.out.println("Value of Yes: " + Yes);
 		System.out.println("Value of Later: " + Later);
-		NO = 1;
+		
 	}
 }
