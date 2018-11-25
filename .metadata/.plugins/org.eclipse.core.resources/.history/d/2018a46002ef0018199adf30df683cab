@@ -1,0 +1,35 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.*;
+
+public class testNg2 {
+WebDriver driver;
+@BeforeTest
+public void before1() {
+	System.out.println("Inside Before Test");
+	System.setProperty("webdriver.chrome.driver", "D:\\Learning\\Selenium\\Chrome_Driver\\chromedriver_win32\\chromedriver.exe");
+	driver = new ChromeDriver();
+}
+	
+@Test
+public void test1() {
+	
+	driver.get("https://google.com");
+	try {Thread.sleep(2000);} catch (Exception e){}
+	driver.findElement(By.name("q")).sendKeys("Testing"); //for finding an element
+	try {Thread.sleep(2000);} catch (Exception e){}
+	driver.findElement(By.name("btnK")).click();
+	try {Thread.sleep(2000);} catch (Exception e){}
+	driver.findElement(By.partialLinkText("Software testing - Wikipedia")).click();
+	try {Thread.sleep(2000);} catch (Exception e){}
+	System.out.println(driver.findElement(By.id("mw-content-text")).getText());
+	driver.close();
+}
+
+@AfterTest
+public void after1() {
+	System.out.println("Inside after Test");
+}
+
+}

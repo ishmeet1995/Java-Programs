@@ -1,0 +1,50 @@
+package package_1;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Get_gmail_params {
+	WebDriver driver;
+	Properties prop = new Properties();
+	
+	Get_gmail_params() throws Exception {
+		FileInputStream fil = new FileInputStream("D:\\Learning\\JAVA\\Code\\Selenium_1\\src\\package_1\\Login.Properties");
+		prop.load(fil);
+	}
+	public void setup() throws Exception {
+		System.setProperty("webdriver.chrome.driver", "D:\\Learning\\Selenium\\Chrome_Driver\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://gmail.com");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
+	}
+	
+	public void login() throws InterruptedException {
+		Thread.sleep(200);
+		driver.findElement(By.xpath("//input[@type = 'email']")).sendKeys(prop.getProperty("id") + Keys.ENTER);
+		//Thread.sleep(200);
+		//driver.findElement(By.xpath("//span[@class = 'RveJvd snByac' and contains(text(),'Next')]")).click();
+		Thread.sleep(200);
+		driver.findElement(By.xpath("//input[@name = 'password']")).sendKeys(prop.getProperty("password") + Keys.ENTER);
+		Thread.sleep(200);
+		driver.findElement(By.xpath("//span[contains(text(), 'Next')]")).click();
+		
+		
+	}
+	public static void main(String args[]) throws Exception{
+		Get_gmail_params obj1 = new Get_gmail_params(); //Load the file
+		obj1.setup();	// open browser with Gmail link
+		obj1.login();	// Login with credentials
+		
+		
+	}
+	
+
+}

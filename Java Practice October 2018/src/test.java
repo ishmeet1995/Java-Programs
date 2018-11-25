@@ -1,10 +1,11 @@
-
-public class test {
-	public static void main(String arrgs []) {
-		byte a = 10 , b;
-  	//  b = a << 2; it would not work as '<<' returns the result in 'integer'.
-		b = (byte) (a << 2);
-	    
+public class test{
+	public static void main(String args[]) {
+		String a = "abc";
+		String b = "           b";
+		String c = "abc";
+		int a2= 0;
+		c.substring(0,4) = a2 ;
+		
 	}
-
 }
+
