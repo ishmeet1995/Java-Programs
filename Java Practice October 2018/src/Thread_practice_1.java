@@ -8,7 +8,11 @@ public class Thread_practice_1 {
 		t.setName("Ishmeet's Thread");
 		System.out.println("current thread = " + t);
 		try {
+<<<<<<< HEAD
 			t.sleep(1000);
+=======
+			Thread.sleep(1000);
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959
 			System.out.println("Print");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block

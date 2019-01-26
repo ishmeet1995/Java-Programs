@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -29,3 +30,16 @@ public class test{
 
 
 
+=======
+public class test{
+	public static void main(String args[]) {
+		String a = "abc";
+		String b = "           b";
+		String c = "abc";
+		int a2= 0;
+		c.substring(0,4) = a2 ;
+		
+	}
+}
+
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959

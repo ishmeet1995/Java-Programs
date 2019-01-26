@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<section name="conditionHistory">
 	</section>
 	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
@@ -8,4 +9,6 @@
 		<item value="1020" key="WIDTH"/>
 		<item value="320" key="HEIGHT"/>
 	</section>
+=======
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959
 </section>

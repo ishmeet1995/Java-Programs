@@ -1,5 +1,8 @@
-configured=true
 eclipse.preferences.version=1
 resetSendMode=KEEP
 resetSendModeOn=0
+<<<<<<< HEAD
 sendMode=NEVER
+=======
+sendMode=NOTIFY
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959
