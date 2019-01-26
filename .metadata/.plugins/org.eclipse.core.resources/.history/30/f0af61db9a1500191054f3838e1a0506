@@ -1,0 +1,27 @@
+package hackerRankPractice;
+
+import java.io.*;
+import java.util.*;
+
+public class String_Tokens {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+        // Write your code here.
+        scan.close();
+        //+ is for consecutive delimiters. For eg we can have ", " i.e comma and a space together. 
+        //Remove '+' and it will consider them as separate ones. Its a regex thing. see cheat sheet.
+        if(s.length() > 0 && s.trim() != " ") { 
+        String[] arr1 = s.trim().split("[ !,?.\\_'@]+");
+        int token_count = arr1.length;
+        System.out.println(token_count);
+        for(String a : arr1)
+        System.out.println(a);
+        }
+        else
+        	System.out.println(0);
+    }
+}
+
+

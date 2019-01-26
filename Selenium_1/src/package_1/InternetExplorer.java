@@ -2,6 +2,8 @@ package package_1;
 
 
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,13 +15,14 @@ public class InternetExplorer {
 		return(1);
 	}
 	public static void main(String[] args) { 	
-		System.setProperty("webdriver.ie.driver", "D:\\Learning\\Selenium\\IE_Driver\\IEDriverServer_Win32_3.14.0\\IEDriverServer.exe");
+		System.setProperty("webdriver.ie.driver", "D:\\Learning\\Selenium\\IE_Driver\\2.45\\selenium-ie-driver-2.45.0.jar");
 		
 		
 		WebDriver driver = new InternetExplorerDriver();
-		try {Thread.sleep(2000);} catch (Exception e){}
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 		driver.get("https://google.com");
-		try {Thread.sleep(5000);} catch (Exception e){}
+		
 		driver.findElement(By.name("q")).sendKeys("Testing"); //for finding an element
 	/*	try {Thread.sleep(2000);} catch (Exception e){}
 		driver.findElement(By.name("btnK")).click();

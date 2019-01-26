@@ -1,0 +1,15 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+//Reading Input file
+public class File_IO{
+	public static void main(String[] args) throws IOException {
+		FileInputStream fil = new FileInputStream("D:\\Learning\\JAVA\\Code\\Java Practice October 2018\\src\\File_IO.txt");
+		
+		System.out.println(fil.available());
+		System.out.println(char(fil.read()));
+		System.out.println(fil.available());
+	}
+
+}

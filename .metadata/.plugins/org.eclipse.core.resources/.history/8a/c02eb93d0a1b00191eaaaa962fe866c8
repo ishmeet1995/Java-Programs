@@ -1,0 +1,16 @@
+package hackerRankPractice;
+
+import java.util.Arrays;
+
+public class Strings_Intro {
+	public static void main(String[] args) {
+	String string1 = "hello", string2 = "java";
+	String[] arr1 = {string2,string1};
+	Arrays.sort(arr1);
+	System.out.println(string2.substring(0, 1));
+	
+	
+	}
+	
+
+}

@@ -1,0 +1,66 @@
+import java.util.*;
+import java.util.ArrayList;
+
+public class MultiThreading_7_Producer_consumer_problem {
+	public static void main(String[] args) throws Exception{
+		Prod_Cons obj1 = new Prod_Cons();
+		
+		Thread t1 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				try {
+					obj1.producer();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+		});
+		
+		Thread t2 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				obj1.consumer();
+				
+			}
+		});	 
+		t1.start();
+		t2.start();
+		
+		t1.join();
+		t2.join();
+	}
+	
+}
+
+
+ class Prod_Cons{
+	 List<Integer> l1 = new ArrayList<Integer>();
+	 final int size = 2;
+	 public void producer() throws InterruptedException {
+		 int value = 0;
+		 while(true) {
+			 while(l1.size() == size) {
+				 wait();
+			 }
+			 
+			 l1.add(value++);
+			 System.out.println("added " + value);
+			 
+			 notify();
+		 }
+	 }
+	 
+	 public void consumer() {
+		 while(true) {
+			 while(l1.size == 0) {
+				 wait();
+			 }
+			 
+			 System.out.println("Extracted "+ l1.remove(1));
+		 }
+	 }
+ }

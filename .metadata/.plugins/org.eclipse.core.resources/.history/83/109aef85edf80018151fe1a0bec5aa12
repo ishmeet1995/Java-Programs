@@ -1,0 +1,40 @@
+
+public class MultiThreading_5_Join_Is_Alive implements Runnable{
+	Thread t;
+	String Name;
+	MultiThreading_5_Join_Is_Alive(String ThreadName) {
+		Name = ThreadName;
+		t = new Thread(this,Name);
+		t.start();
+	}
+	
+	public void run() {
+		for(int i = 0; i <=5 ; i++) {
+			try {Thread.sleep(1000);}catch (Exception e) {}
+			System.out.println("This is " + i + " for thread " + t.getName());
+		}
+	}
+	
+	public static void main(String[] args) {
+		MultiThreading_5_Join_Is_Alive obj1 = new MultiThreading_5_Join_Is_Alive("thread1");
+		MultiThreading_5_Join_Is_Alive obj2	= new MultiThreading_5_Join_Is_Alive("thread2");
+		MultiThreading_5_Join_Is_Alive obj3 = new MultiThreading_5_Join_Is_Alive("thread3");
+		
+		System.out.println(obj1.t.isAlive());
+		System.out.println(obj2.t.isAlive());
+		System.out.println(obj3.t.isAlive());
+		
+		try {
+			obj1.t.join();
+			obj2.t.join();
+			obj3.t.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+
+}

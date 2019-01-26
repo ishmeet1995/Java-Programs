@@ -4,7 +4,7 @@ public class jasypt_implementation {
 
 	public static void main(String args[]) {
 		BasicTextEncryptor textEncryptor = new BasicTextEncryptor();
-		String privateData = "hello world";
+		String privateData = "Ishmeet Bindra";
 		textEncryptor.setPasswordCharArray("some-random-data".toCharArray());
 		String myEncryptedData = textEncryptor.encrypt(privateData);
 		System.out.println(myEncryptedData);
