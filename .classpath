@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+<<<<<<< HEAD
+=======
+	<classpathentry excluding="test.java" kind="src" path=""/>
+>>>>>>> fe96e8d3bc381c68a719c40d087af9c2cb924335
 	<classpathentry kind="output" path=""/>
 </classpath>
