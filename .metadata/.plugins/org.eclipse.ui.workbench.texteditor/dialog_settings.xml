@@ -2,12 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+<<<<<<< HEAD
 		<item value="Calendar" key="selection"/>
+=======
+<<<<<<< HEAD
+		<item value="Calendar" key="selection"/>
+=======
+		<item value="out_b" key="selection"/>
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 			<item value="calendar"/>
 			<item value="students"/>
 			<item value="internet"/>
@@ -21,6 +33,14 @@
 		<list key="replacehistory">
 			<item value="students1"/>
 			<item value="Tables_Practice2"/>
+<<<<<<< HEAD
+=======
+=======
+			<item value="temp_b"/>
+		</list>
+		<list key="replacehistory">
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 			<item value="out_b"/>
 		</list>
 	</section>
@@ -28,7 +48,17 @@
 		<item value="385" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="523" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 		<item value="1306" key="DIALOG_X_ORIGIN"/>
 		<item value="234" key="DIALOG_Y_ORIGIN"/>
+=======
+<<<<<<< HEAD
+		<item value="1306" key="DIALOG_X_ORIGIN"/>
+		<item value="234" key="DIALOG_Y_ORIGIN"/>
+=======
+		<item value="779" key="DIALOG_X_ORIGIN"/>
+		<item value="173" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 	</section>
 </section>

@@ -1,3 +1,10 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 org.eclipse.debug.ui.ExpressionView.org.eclipse.jdt.debug.ui.show_null_entries=true
+=======
+<<<<<<< HEAD
+org.eclipse.debug.ui.ExpressionView.org.eclipse.jdt.debug.ui.show_null_entries=true
+=======
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 org.eclipse.debug.ui.VariableView.org.eclipse.jdt.debug.ui.show_null_entries=true

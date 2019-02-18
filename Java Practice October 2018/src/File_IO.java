@@ -14,7 +14,10 @@ public class File_IO{
 		}
 		System.out.println(Final_Output);
 		System.out.println(fil.available());
+<<<<<<< HEAD
 		fil.close();
+=======
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 	}
 
 }

@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By.ByXPath"/>
+<fullyQualifiedTypeName name="package_1.DropDownMenu"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="package_1.Links_Practice"/>
+<fullyQualifiedTypeName name="package_1.Tables_Practice"/>
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 <fullyQualifiedTypeName name="package_1.alert"/>
 <fullyQualifiedTypeName name="package_1.pop_up_windows_practice"/>
 <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
@@ -9,6 +19,10 @@
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Workbook"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.util.WorkbookUtil"/>
+<<<<<<< HEAD
+=======
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
 <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFSheet"/>
 <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFRow"/>
@@ -28,12 +42,20 @@
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="collections.ArrayList1"/>
+<<<<<<< HEAD
+=======
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
 <fullyQualifiedTypeName name="enum_codes.Apple"/>
+<<<<<<< HEAD
+=======
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 <fullyQualifiedTypeName name="enum_codes.students"/>
 <fullyQualifiedTypeName name="enum_codes.students3"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
@@ -43,6 +65,7 @@
 <fullyQualifiedTypeName name="java.util.Dictionary"/>
 <fullyQualifiedTypeName name="java.util.Hashtable"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.regex.PatternSyntaxException"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -60,4 +83,26 @@
 <fullyQualifiedTypeName name="java.util.concurrent.CountDownLatch"/>
 <fullyQualifiedTypeName name="interf1"/>
 <fullyQualifiedTypeName name="Anonymous_InnerClass"/>
+=======
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.regex.PatternSyntaxException"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="UsernameValidator"/>
+=======
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 </qualifiedTypeNameHistroy>

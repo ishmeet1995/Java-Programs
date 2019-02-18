@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -29,3 +33,19 @@ public class test{
 
 
 
+<<<<<<< HEAD
+=======
+=======
+public class test{
+	public static void main(String args[]) {
+		String a = "abc";
+		String b = "           b";
+		String c = "abc";
+		int a2= 0;
+		c.substring(0,4) = a2 ;
+		
+	}
+}
+
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137

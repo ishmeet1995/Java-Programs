@@ -2,6 +2,10 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 	<classpathentry kind="lib" path="D:/Learning/Selenium/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="D:/Learning/Selenium/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="D:/Learning/Selenium/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
@@ -9,5 +13,10 @@
 	<classpathentry kind="lib" path="D:/Learning/Selenium/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>
 	<classpathentry kind="lib" path="D:/Learning/Selenium/selenium-java-3.141.59/libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="D:/Learning/Selenium/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 0053e789ce7d9166023715e324485871cba6f959
+>>>>>>> a45c3d0da3caf1d4278cc9ad23a54fca350c4137
 	<classpathentry kind="output" path="bin"/>
 </classpath>
