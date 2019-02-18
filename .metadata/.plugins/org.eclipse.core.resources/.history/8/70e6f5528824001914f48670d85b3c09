@@ -1,0 +1,24 @@
+package hackerRankPractice;
+
+import java.util.Scanner;
+
+public class Substring_1 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String str1 = scan.nextLine();
+		int length = scan.nextInt();
+		scan.close();
+		String[] arr1;
+		String regex = "\\w";
+		
+		for(int i = 1;i<=str1.length()-1;i++)
+		{
+			regex +="\\w";
+		}
+		
+		arr1 = str1.split(regex);
+		
+		
+		
+	}
+}

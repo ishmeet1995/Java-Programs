@@ -1,0 +1,6 @@
+package generics;
+
+public interface Interface_1 {
+	void print();
+
+}

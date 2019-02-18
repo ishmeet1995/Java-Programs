@@ -1,0 +1,9 @@
+package lambdaExpressions;
+
+interface abc<T extends Number>{
+	T factorial(T input);
+}
+
+public class Generic_Lambda_Func {
+
+}

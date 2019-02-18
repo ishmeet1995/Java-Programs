@@ -1,0 +1,17 @@
+package lambdaExpressions;
+
+interface abc<T extends Number>{
+	T factorial(T input);
+}
+
+public class Generic_Lambda_Func {
+	public static void main(String[] args) {
+		abc<Integer> lambda1 = (a) ->{
+			for(int i=0;i<a;i++) {
+				a += i; 
+			}
+			return a;
+			
+		};
+	}
+}

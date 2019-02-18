@@ -1,0 +1,21 @@
+package generics;
+
+class avg<T extends Number>{
+	T[] internal_arr;
+	avg(T[] arr){
+		internal_arr = arr;
+	}
+	
+	public double averages() {
+		double final_avg = 0;
+		for(int i = 0;i <= internal_arr.length;i++) {
+			final_avg += internal_arr[i].doubleValue();			
+		}
+		
+		return final_avg/internal_arr.length;
+	}
+}
+
+public class generics_WildCard {
+
+}

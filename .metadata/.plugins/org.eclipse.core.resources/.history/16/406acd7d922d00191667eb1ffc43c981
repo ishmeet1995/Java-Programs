@@ -1,0 +1,16 @@
+package lambdaExpressions;
+
+public class Lambda_wirh_Runnable {
+	public static void main(String[] args) {
+		Thread test1 = new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
+	}
+
+}

@@ -1,0 +1,19 @@
+
+public class MultiThreading_4_Multiple_Threads implements Runnable  {
+	String Name;
+	Thread t;
+	
+	public MultiThreading_4_Multiple_Threads(String ThreadName) {
+		Name = ThreadName;
+		t = new Thread(this,Name);  
+		t.start();
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

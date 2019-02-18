@@ -1,0 +1,69 @@
+class threads {
+	Thread t;
+	static int output = 0;
+	static boolean second_thread = false;
+	
+
+	
+	
+	public void increment1() {
+		synchronized(this){
+			try{
+				System.out.println("wait activated");
+				wait(); 
+				} catch (Exception e){}
+			System.out.println("wait deactivated");
+			for(int i = 0;i<10;i++) {
+			output++;
+			}
+			System.out.println(output);
+			
+		}
+		
+	}
+	public void increment2() {
+		try{Thread.sleep(1000);} catch (Exception e) {}
+		synchronized(this){
+			for(int i = 0;i<10;i++) {
+			output++;
+			}
+			System.out.println(output);
+			System.out.println("notify activated");
+			notify();
+		}
+		
+	}
+	
+}
+
+public class test{
+	public static void main(String args[])  throws Exception{
+		threads obj1 = new threads();
+		
+		Thread t1 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				obj1.increment1();
+				
+			}
+		});
+		
+		Thread t2 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				obj1.increment2();
+				
+			}
+		});
+		t1.start();
+		t2.start();
+		
+		t1.join();
+		t2.join();
+		
+		
+	}
+}
+

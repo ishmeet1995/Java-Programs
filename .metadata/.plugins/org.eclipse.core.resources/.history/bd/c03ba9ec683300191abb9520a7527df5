@@ -1,0 +1,30 @@
+package caesarCipher;
+
+public class Caesar_ciper_Encryption {
+	public String encryption(String input_str, int key) {
+		
+		String alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String output_str = "";
+		
+		for(int i= 0;i<=input_str.length();i++) {
+			String process_string = input_str.toUpperCase();
+			char current_char = process_string.charAt(i);
+			int position_in_alphabet = alphabets.indexOf(current_char);
+			int new_position = 0;
+			
+			new_position = position_in_alphabet + key;
+			
+			if(new_position > 25) {
+				new_position = new_position - 25;
+			}
+			
+			output_str += alphabets.charAt(new_position);
+		}
+		
+		
+		
+		
+		return output_str;
+	}
+
+}

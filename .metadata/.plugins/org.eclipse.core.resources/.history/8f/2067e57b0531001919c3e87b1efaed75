@@ -1,0 +1,25 @@
+
+public class Individual_Numbers_Square {
+	static int squareing (int num_to_be_squared) {
+		
+		Integer a = num_to_be_squared;
+		String 	string2 = a.toString(),string3 = " ";
+		
+		
+		for(int i = 0;i< string2.length(); i++) {
+			Integer temp_int = Integer.parseInt(string2.substring(i,i+1));
+			string3 += Integer.toString(temp_int*temp_int);
+			
+			
+		}
+		
+		
+		
+		return num_to_be_squared;
+		
+	}
+	
+	public static void main(String[] args) {
+		squareing(9881);
+	}
+}

@@ -1,0 +1,26 @@
+package package_1;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Salesforce_dorpdown_test {
+	public static void main(String args[]) {
+		System.setProperty("webdriver.chrome.driver", "D:\\Learning\\Selenium\\Chrome_Driver\\chromedriver_win32\\chromedriver.exe");
+		WebElement element = null;
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("https://www.salesforce.com/in/form/signup/freetrial-sales.jsp?d=70130000000EqoP");
+		driver.findElement(By.xpath("//input[@id = 'UserFirstName']")).sendKeys("Ishmeet");
+		driver.findElement(By.xpath("//input[@id = 'UserLastName']")).sendKeys("Bindra");
+		List<WebElement> elements = driver.findElements(By.xpath("//ul[@class = 'selectBox-dropdown-menu selectBox-options' and @style = 'width: 296px; top: 257px; left: 780.667px; display: none;']"));
+		List<String> l1 = null;
+		l1.add(elements.toString());
+	}
+}

@@ -1,0 +1,13 @@
+
+public class Individual_Numbers_Square {
+	static int squareing (int num_to_be_squared) {
+		
+		Integer a = num_to_be_squared;
+		String 	string2 = a.toString();
+		
+		
+		
+		return num_to_be_squared;
+		
+	}
+}

@@ -1,0 +1,20 @@
+package caesarCipher;
+
+public class Caesar_ciper_Encryption {
+	public String encryption(String input_str, int key) {
+		
+		String alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String output_str = "";
+		
+		for(int i= 0;i<=input_str.length();i++) {
+			char current_char = input_str.charAt(i);
+			int position_in_alphabet = alphabets.indexOf(current_char);
+		}
+		
+		
+		
+		
+		return " ";
+	}
+
+}

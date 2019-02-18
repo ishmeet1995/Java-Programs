@@ -1,0 +1,24 @@
+package generics;
+
+class avg<T extends Number>{
+	T[] internal_arr;
+	avg(T[] arr){
+		internal_arr = arr;
+	}
+	//Even though the input is of dynamic type. We will always return a specific type of input. This 
+	// prevents ambiguity in long run.
+	public double averages() {
+		double final_avg = 0;
+		for(int i = 0;i <= internal_arr.length;i++) {
+			final_avg += internal_arr[i].doubleValue();			
+		}
+		
+		return final_avg/internal_arr.length;
+	}
+}
+
+public class generics_WildCard {
+	public static void main(String[] args) {
+		
+	}
+}

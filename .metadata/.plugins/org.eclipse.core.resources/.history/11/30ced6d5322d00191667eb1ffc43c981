@@ -1,0 +1,13 @@
+package lambdaExpressions;
+
+interface lambda_test{
+	void ablockofcode();
+}
+
+public class Practice_1 {
+	public static void main(String[] args) {
+		lambda_test ablockofcode = () ->{
+			System.out.println("Hello");
+		};
+	}
+}

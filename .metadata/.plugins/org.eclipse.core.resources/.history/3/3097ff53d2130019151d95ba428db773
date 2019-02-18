@@ -1,0 +1,10 @@
+package hackerRankPractice;
+
+public class Palindrome {
+	public static void main(String args[]) {
+		String   input	   = "madam";
+		int 	 str_len   = input.length();
+		String[] srt_array = input.split("");
+	}
+
+}

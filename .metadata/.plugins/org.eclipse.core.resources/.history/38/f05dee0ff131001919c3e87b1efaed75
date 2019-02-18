@@ -1,0 +1,17 @@
+interface interf1{
+	int sum(int a,int b);
+}
+public class Anonymous_InnerClass {
+	public static void main(String[] args) {
+		interf1 obj1 = new interf1() {
+			
+			@Override
+			public int sum(int a,int b) {
+				
+				return a+b;
+			}
+		};
+		
+		System.out.println(obj1.sum(5, 6))
+	}
+}

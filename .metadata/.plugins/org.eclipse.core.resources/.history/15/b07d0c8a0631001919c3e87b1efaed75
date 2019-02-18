@@ -1,0 +1,12 @@
+
+public class Individual_Numbers_Square {
+	static int squareing (int num_to_be_squared) {
+		
+		
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(squareing(9881));
+	}
+}

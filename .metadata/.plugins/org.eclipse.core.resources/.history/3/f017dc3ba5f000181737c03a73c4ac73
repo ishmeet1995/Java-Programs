@@ -1,0 +1,14 @@
+package package_1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Get_gmail_params {
+	WebDriver driver;
+	public void setup() {
+		System.setProperty("WebDriver.chrome.driver", "D:\\Learning\\Selenium\\Chrome_Driver\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://gmail.com");
+	}
+
+}

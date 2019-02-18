@@ -1,0 +1,11 @@
+package lambdaExpressions;
+
+public class Lambda_Method_References {
+	public static void main(String[] args) {
+		
+	}
+	
+	private static void method_1() {
+		System.out.println("Inside static method");
+	}
+}
