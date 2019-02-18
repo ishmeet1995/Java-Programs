@@ -1,0 +1,33 @@
+package package_1;
+
+
+
+import java.io.FileInputStream;
+import java.util.*;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Properties_test {
+
+	public static void main(String[] args) throws Exception { 	
+		Properties pro = new Properties();
+		FileInputStream fin = new FileInputStream("D:\\Learning\\JAVA\\Code\\Selenium_1\\first.properties");
+		pro.load(fin);
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Learning\\Selenium\\Chrome_Driver\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();	
+		driver.get(pro.getProperty("url"));
+		try {Thread.sleep(2000);} catch (Exception e){}
+		driver.findElement(By.name(pro.getProperty("google_home"))).sendKeys("Testing"); //for finding an element
+		try {Thread.sleep(2000);} catch (Exception e){}
+		driver.findElement(By.name(pro.getProperty("search_button"))).click();
+		try {Thread.sleep(2000);} catch (Exception e){}
+		driver.findElement(By.partialLinkText(pro.getProperty("link_in_text"))).click();
+		try {Thread.sleep(2000);} catch (Exception e){}
+		System.out.println(driver.findElement(By.id("mw-content-text")).getText());
+		driver.close();
+	}
+
+}

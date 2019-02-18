@@ -1,0 +1,26 @@
+
+public class MultiThreading_2_Creating_Threads_Via_RUN implements Runnable{
+	Thread t;
+	public MultiThreading_2_Creating_Threads_Via_RUN() {
+		// TODO Auto-generated constructor stub
+		t = new Thread(this, "New Thread");
+		System.out.println("Thread = " + t);
+		t.start();	
+	}
+	
+	
+	public void run() {
+		System.out.println("Inside the run()");
+	}
+	
+	public static void main(String[] args) {
+		new 
+		Thread  t = Thread.currentThread();
+		System.out.println(t.getName());
+		t.setName("Ishmeet's First Thread");
+		System.out.println(t.getName());
+		
+
+	}
+
+}

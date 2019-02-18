@@ -1,0 +1,53 @@
+package hackerRankPractice;
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Currency_Formatter {
+	
+	public String us_process(String[] amount, String currency_sign, String country)
+	{
+		//$12,324.13
+		int len1 = amount[0].length();
+		String output = null;
+		if (country.equalsIgnoreCase("France")){
+		{		if(len1>=5) {
+			output = currency_sign + amount[0].substring(0, 2) + "," + amount[0].substring(2, len1) + "." + amount[1];
+		}
+		else {
+			output = currency_sign + amount[0] + "." + amount[1];
+		}
+		}
+		
+			
+		return output;
+	}
+	
+	
+	
+    public static void main(String[] args) {
+        
+        double payment = 12324.134;
+        
+        String us = null,india = null,china = null,france = null;
+        DecimalFormat format1 = new DecimalFormat("#0.00");
+        String newnum = format1.format(payment);
+        String[] newnum2 = newnum.split("\\.");
+        
+        us = new Currency_Formatter().us_process(newnum2, "$");        
+        india = new Currency_Formatter().us_process(newnum2, "Rs.");        
+        china = new Currency_Formatter().us_process(newnum2, "￥");        
+      
+
+        // Write your code here.
+        
+        System.out.println("US: " + us);
+        System.out.println("India: " + india);
+        System.out.println("China: " + china);
+        System.out.println("France: " + france);
+    }
+}
+

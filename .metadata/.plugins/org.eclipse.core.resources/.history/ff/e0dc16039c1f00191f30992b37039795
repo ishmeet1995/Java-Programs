@@ -1,0 +1,17 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class test{
+	public static void main(String args[]) {
+		
+		String abc = "GJ12AY7654";
+		Pattern pat1 = Pattern.compile("\\w+(?=\\d\\d\\d\\d)");
+		Matcher match1 = pat1.matcher(abc);
+		
+		while(match1.find()) {
+			System.out.println(match1.group());
+		}
+		
+	}
+}
+

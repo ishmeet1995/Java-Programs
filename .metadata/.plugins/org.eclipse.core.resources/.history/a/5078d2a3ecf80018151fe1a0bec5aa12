@@ -1,0 +1,15 @@
+
+public class MultiThreading_5_Join_Is_Alive implements Runnable{
+	Thread t;
+	String Name;
+	MultiThreading_5_Join_Is_Alive(String ThreadName) {
+		Name = ThreadName;
+		t = new Thread(this,Name);
+		t.start();
+	}
+	
+	public void run() {
+		
+	}
+
+}

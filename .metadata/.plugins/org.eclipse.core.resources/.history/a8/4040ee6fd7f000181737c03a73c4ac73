@@ -1,0 +1,14 @@
+import org.jasypt.util.text.BasicTextEncryptor;
+
+public class jasypt_implementation {
+
+	public static void main(String args[]) {
+		BasicTextEncryptor textEncryptor = new BasicTextEncryptor();
+		String privateData = "hello world";
+		textEncryptor.setPasswordCharArray("some-random-data".toCharArray());
+		String myEncryptedData = textEncryptor.encrypt(privateData);
+		System.out.println(myEncryptedData);
+		System.out.println(textEncryptor.decrypt(doOhKUNFfcE4tLgGDlFP+WwuHLe9kL4g
+))
+	}
+}

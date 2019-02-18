@@ -1,0 +1,30 @@
+class callme {
+	void call(String msg) throws Exception {
+		System.out.println("[");
+		Thread.sleep(1000);
+		System.out.println("msg");
+		Thread.sleep(1000);
+		System.out.println("]");
+	}
+}
+
+class thread_creation implements Runnable{
+	Thread t;
+	String message;
+	public thread_creation(String msg) {
+		t = new Thread(this, msg);
+		message = msg;
+		t.start();
+	}
+	
+	@Override
+	public void run() throws Exception {
+		callme obj1 = new callme();
+		obj1.call(message);
+		
+	}
+	
+}
+public class MultiThreading_6_Syncronization {
+
+}

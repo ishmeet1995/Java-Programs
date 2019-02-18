@@ -1,0 +1,26 @@
+
+public class Get_State implements Runnable {
+	static Thread t ;
+	Get_State(){
+		t= new Thread(this,"hello");
+		
+	}
+	public void run() {
+
+	      // returns the state of this thread
+	      Thread.State state = Thread.currentThread().getState();
+	      System.out.println(Thread.currentThread().getName());
+	      System.out.println("state = " + state);
+	     
+	   }
+
+	   public static void main(String args[]) {
+	      
+	     new Get_State();
+	      // this will call run() function
+	      t.start();
+	      System.out.print(t.getState());
+	   }
+
+
+}

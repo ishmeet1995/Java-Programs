@@ -1,0 +1,10 @@
+public class test{
+	public static void main(String args[]) {
+		
+		String abc = "GJ12AY7654";
+		String[] abcarr = abc.split("\\w+(?=\\d\\d\\d\\d)");
+		
+		
+	}
+}
+

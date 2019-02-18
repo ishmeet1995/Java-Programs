@@ -1,0 +1,17 @@
+class suspend_resume implements Runnable{
+	String message;
+	suspend_resume(String thread_name){
+		Thread t = new Thread(this,thread_name);
+		message = thread_name;
+		t.start();
+	}
+	public void run() {
+		for(int i = 0 ; i <= 15; i++) {
+			System.out.println("Thread "+ message + i);
+			try {Thread.sleep(1000);}catch (Exception e) {}
+		}
+	}
+}
+public class MultiThreading_8_Suspent_Resume {
+
+}
