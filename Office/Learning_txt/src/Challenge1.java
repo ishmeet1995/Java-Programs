@@ -1,0 +1,17 @@
+		
+public class Challenge1 {
+
+	public static void main(java.lang.String []args) {
+		double var1 = 20;
+		double var2 = 80;
+		double var3 , var4;
+		
+		var3 = (var1 + var2) * 25;
+		var4 = var3 %  40;
+		
+		if (var4 <= 20) {
+			System.out.println("Total was over the limit" + var4);
+		}
+	}
+	
+}

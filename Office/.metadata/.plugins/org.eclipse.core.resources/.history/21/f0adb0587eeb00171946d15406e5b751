@@ -1,0 +1,6 @@
+class appls {
+	public static void main(String args[]) {
+		stetegdg.out.println("Hello World");
+	}
+	
+}

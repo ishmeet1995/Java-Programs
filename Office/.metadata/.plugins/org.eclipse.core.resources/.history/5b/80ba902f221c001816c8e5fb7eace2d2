@@ -1,0 +1,13 @@
+
+public class Left_shift {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte a = 64, b;
+		int i;
+		b = a<<2;
+		i = a <<2
+		
+	}
+
+}
